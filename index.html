@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <!-- External CSS File -->
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Sticky Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <!-- Navbar Toggler for mobile -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <!-- Home Link -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <!-- About Link -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <!-- Projects Link -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <!-- Skills Link -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <!-- Contact Link -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <section id="home" class="section">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1>Welcome to my Portfolio</h1>
+                    <p class="lead">Explore my work and achievements.</p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="Profile\image.jpg" class="img-fluid rounded-circle profile-photo" alt="Profile Photo">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section text-center">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <h2>About Me</h2>
+                    <p class="lead">
+                        Hi, I'm Gopal Sharma, a passionate final year Undergrad at Delhi Technological University. I specialize in Data Science and Machine Learning, with a keen interest in Artificial Intelligence and Business Analytics.
+                    </p>
+                    <p>
+                        In my spare time, I enjoy Reading blogs about new technologies and I'm always eager to learn and grow in this ever-evolving industry.
+                    </p>
+                    <p>
+                        Feel free to explore my portfolio to see some of my recent projects and accomplishments. If you'd like to collaborate or have any questions, don't hesitate to reach out via the contact information below.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3>Python</h3>
+                        <button class="btn btn-primary mb-2" onclick="toggleVisibility('python-certifications')">Show Certifications</button>
+                        <div id="python-certifications" style="display: none;">
+                            <p>Certification 1: Description</p>
+                            <p>Certification 2: Description</p>
+                            <!-- Add more certifications as needed -->
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Data Science</h3>
+                        <button class="btn btn-primary mb-2" onclick="toggleVisibility('ds-certifications')">Show Certifications</button>
+                        <div id="ds-certifications" style="display: none;">
+                            <p>Certification 1: Description</p>
+                            <p>Certification 2: Description</p>
+                            <!-- Add more certifications as needed -->
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Machine Learning</h3>
+                        <button class="btn btn-primary mb-2" onclick="toggleVisibility('ml-certifications')">Show Certifications</button>
+                        <div id="ml-certifications" style="display: none;">
+                            <p>Certification 1: Description</p>
+                            <p>Certification 2: Description</p>
+                            <!-- Add more certifications as needed -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container" id="123">
+                <h2 class="text-center">Contact Me</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="contact-info text-center">
+                            <p><i class="fas fa-envelope"></i> gopalvrithray@gmail.com</p>
+                            <p><i class="fas fa-phone"></i> +918595154772</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-4">
+                    <div class="col-md-6 text-center">
+                        <a href="#" class="social-icon" data-toggle="tooltip" title="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
+                        <a href="#" class="social-icon" data-toggle="tooltip" title="GitHub"><i class="fab fa-github fa-2x"></i></a>
+                        <a href="#" class="social-icon" data-toggle="tooltip" title="Twitter"><i class="fab fa-twitter fa-2x"></i></a>
+                        <a href="#" class="social-icon" data-toggle="tooltip" title="Medium"><i class="fab fa-medium fa-2x"></i></a>
+                        <a href="#" class="social-icon" data-toggle="tooltip" title="YouTube"><i class="fab fa-youtube fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Bootstrap JS and other scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Script for Tooltips -->
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        });
+
+        function toggleVisibility(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "none") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

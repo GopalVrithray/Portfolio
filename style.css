@@ -1,0 +1,248 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa; /* Light gray background */
+    color: #343a40; /* Dark text color */
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #343a40 !important; /* Dark background */
+    padding: 14px 0;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    color: #ffffff; /* White text color */
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important; /* White text color for links */
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    padding: 8px 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #17a2b8 !important; /* Hover color */
+}
+
+/* Main section styles */
+.section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.section-heading {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: #343a40; /* Dark text color */
+}
+
+.section-subheading {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 50px;
+    color: #6c757d; /* Gray text color */
+}
+
+/* About section styles */
+.about-section {
+    background-color: #ffffff; /* White background */
+    padding: 80px 0;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: #343a40; /* Dark text color */
+}
+
+.about-section img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.about-section .content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Projects section styles */
+.projects-section {
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 80px 0;
+}
+
+.projects-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: #343a40; /* Dark text color */
+}
+
+.card {
+    margin-bottom: 30px;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.card-link {
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 8px 20px;
+    margin-right: 10px;
+    border: 1px solid #007bff;
+    color: #007bff;
+    transition: all 0.3s ease;
+}
+
+.card-link:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+/* Skills section styles */
+.skills-section {
+    background-color: #ffffff; /* White background */
+    padding: 80px 0;
+}
+
+.skills-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: #343a40; /* Dark text color */
+}
+
+.skill-category {
+    margin-bottom: 40px;
+}
+
+.skill-category h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #343a40; /* Dark text color */
+}
+
+.skill-category .skill-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skill-category .skill-list-item {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #343a40; /* Dark text color */
+}
+
+/* Contact section styles */
+.contact-section {
+    background-color: #343a40; /* Dark background */
+    color: #ffffff; /* White text color */
+    padding: 60px 0; /* Adjusted padding */
+    min-height: calc(100vh - 100px); /* Decreased minimum height */
+    /* display: flex; */
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 3rem; /* Larger font size for heading */
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.contact-info {
+    margin-bottom: 40px;
+}
+
+.contact-info h5 {
+    font-size: 1.8rem; /* Larger font size for contact information */
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 15px;
+    transition: all 0.3s ease;
+}
+
+.social-icons a img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.social-icons a:hover {
+    transform: translateY(-5px);
+}
+.123{
+    display: flex;
+    flex-direction:column;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contact-section h2 {
+        font-size: 2.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .contact-info h5 {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-section h2 {
+        font-size: 2rem; /* Further adjust font size for smallest screens */
+    }
+
+    .contact-info h5 {
+        font-size: 1.2rem; /* Further adjust font size for smallest screens */
+    }
+}

@@ -13,152 +13,456 @@
 </head>
 <body>
 
-    <!-- Sticky Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Portfolio</a>
-            <!-- Navbar Toggler for mobile -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Navbar Links -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <!-- Home Link -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <!-- About Link -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <!-- Projects Link -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <!-- Skills Link -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <!-- Contact Link -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
+<!-- Sticky Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Portfolio</a>
+        <!-- Navbar Toggler for mobile -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <!-- Home Link -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <!-- About Link -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <!-- Projects Link -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <!-- Skills Link -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <!-- Certificates Link -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#certifications">Certificates</a>
+                </li>
+                <!-- Contact Link -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+ <!-- Main Content -->
+ <div class="container">
+    <section id="home" class="section">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div><h1>Hi, I am Gopal Sharma</h1>
+                    <h2>Welcome to my Portfolio</h2>
+                </div>
+                <p class="lead">Explore my work and achievements.</p>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="Profile/image.jpg" class="img-fluid rounded-circle profile-photo" id="profile-photo" alt="Profile Photo">
             </div>
         </div>
-    </nav>
+    </section>
 
-    <!-- Main Content -->
-    <div class="container">
-        <section id="home" class="section">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <h1>Welcome to my Portfolio</h1>
-                    <p class="lead">Explore my work and achievements.</p>
-                </div>
-                <div class="col-md-6 text-center">
-                    <img src="Profile\image.jpg" class="img-fluid rounded-circle profile-photo" alt="Profile Photo">
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="section about-section text-center">
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <h2>About Me</h2>
-                    <p class="lead">
-                        Hi, I'm Gopal Sharma, a passionate final year Undergrad at Delhi Technological University. I specialize in Data Science and Machine Learning, with a keen interest in Artificial Intelligence and Business Analytics.
-                    </p>
-                    <p>
-                        In my spare time, I enjoy Reading blogs about new technologies and I'm always eager to learn and grow in this ever-evolving industry.
-                    </p>
-                    <p>
-                        Feel free to explore my portfolio to see some of my recent projects and accomplishments. If you'd like to collaborate or have any questions, don't hesitate to reach out via the contact information below.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="section skills-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <h3>Python</h3>
-                        <button class="btn btn-primary mb-2" onclick="toggleVisibility('python-certifications')">Show Certifications</button>
-                        <div id="python-certifications" style="display: none;">
-                            <p>Certification 1: Description</p>
-                            <p>Certification 2: Description</p>
-                            <!-- Add more certifications as needed -->
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <h3>Data Science</h3>
-                        <button class="btn btn-primary mb-2" onclick="toggleVisibility('ds-certifications')">Show Certifications</button>
-                        <div id="ds-certifications" style="display: none;">
-                            <p>Certification 1: Description</p>
-                            <p>Certification 2: Description</p>
-                            <!-- Add more certifications as needed -->
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <h3>Machine Learning</h3>
-                        <button class="btn btn-primary mb-2" onclick="toggleVisibility('ml-certifications')">Show Certifications</button>
-                        <div id="ml-certifications" style="display: none;">
-                            <p>Certification 1: Description</p>
-                            <p>Certification 2: Description</p>
-                            <!-- Add more certifications as needed -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="section contact-section">
-            <div class="container" id="123">
-                <h2 class="text-center">Contact Me</h2>
-                <div class="row justify-content-center">
-                    <div class="col-md-6">
-                        <div class="contact-info text-center">
-                            <p><i class="fas fa-envelope"></i> gopalvrithray@gmail.com</p>
-                            <p><i class="fas fa-phone"></i> +918595154772</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center mt-4">
-                    <div class="col-md-6 text-center">
-                        <a href="#" class="social-icon" data-toggle="tooltip" title="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
-                        <a href="#" class="social-icon" data-toggle="tooltip" title="GitHub"><i class="fab fa-github fa-2x"></i></a>
-                        <a href="#" class="social-icon" data-toggle="tooltip" title="Twitter"><i class="fab fa-twitter fa-2x"></i></a>
-                        <a href="#" class="social-icon" data-toggle="tooltip" title="Medium"><i class="fab fa-medium fa-2x"></i></a>
-                        <a href="#" class="social-icon" data-toggle="tooltip" title="YouTube"><i class="fab fa-youtube fa-2x"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
+<!-- About Section -->
+<section id="about" class="section about-section text-center">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <h2>About Me</h2>
+            <p class="lead">
+                Hi, I'm Gopal Sharma, a passionate final year Undergrad at Delhi Technological University. I specialize in Data Science and Machine Learning, with a keen interest in Artificial Intelligence and Business Analytics.
+            </p>
+            <p>
+                In my spare time, I enjoy reading blogs about new technologies and I'm always eager to learn and grow in this ever-evolving industry.
+            </p>
+            <p>
+                Feel free to explore my portfolio to see some of my recent projects and accomplishments. If you'd like to collaborate or have any questions, don't hesitate to reach out via the contact information below.
+            </p>
+        </div>
     </div>
+</section>
 
-    <!-- Bootstrap JS and other scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Script for Tooltips -->
-    <script>
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
+       <!-- Projects Section -->
+<section class="projects-section text-center" id="projects">
+    <div class="container">
+        <h2 class="project-title">Projects</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Profile/Student performance.jpeg" class="card-img-top " alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Student Performance Prediction</h5>
+                        <p class="card-text">Used Exploratory Data Analysis for preprocessing and cleaning data and implemented ML-Algorithms for Prediction</p>
+                        <a href="https://github.com/GopalVrithray/Projects/tree/main/Student_Performance_Prediction" class="btn btn-secondary">Github Link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Profile/Indian_Premier_League_Official_Logo.png" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">IPL EDA</h5>
+                        <p class="card-text">Performed Explopratory Data Analysis on the IPL Dataset for making a report on various outcomes, preprocessed and cleaned it for Machine Learning</p>
+                        <a href="https://github.com/GopalVrithray/Projects/tree/main/IPL%20EDA" class="btn btn-secondary">Github Link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Profile/Titanic.jpg" class="card-img-top project-img" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Titanic EDA</h5>
+                        <p class="card-text">Used Kaggle IPL dataset and have hands on Data cleaning and pre-processing using various Python libraries for Machine learning and Visualization.</p>
+                        <a href="https://github.com/GopalVrithray/Projects/tree/main/Titanic%20EDA" class="btn btn-secondary">Github Link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="skills" class="section skills-section">
+    <div class="container">
+        <h2 class="skills-title">Skills</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <i class="fas fa-robot fa-2x"></i>
+                <h3>Machine Learning</h3>
+                <div id="ml-certifications" style="display: none;">
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <i class="fas fa-database fa-2x"></i>
+                <h3>Data Science</h3>
+                <div id="ds-certifications" style="display: none;">
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <i class="fab fa-python fa-2x"></i>
+                <h3>Python</h3>
+                <div id="python-certifications" style="display: none;">
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <i class="fas fa-brain fa-2x"></i>
+                <h3>Artificial Intelligence</h3>
+                <div id="ai-certifications" style="display: none;">
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <i class="fas fa-network-wired fa-2x"></i>
+                <h3>Deep Learning</h3>
+                <div id="dl-certifications" style="display: none;">
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <i class="fab fa-github fa-2x"></i>
+                <h3>Git & GitHub</h3>
+                <div id="git-certifications" style="display: none;">
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <i class="fab fa-html5 fa-2x"></i>
+                <h3>HTML</h3>
+                <div id="html-certifications" style="display: none;">
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <i class="fab fa-css3-alt fa-2x"></i>
+                <h3>CSS</h3>
+                <div id="css-certifications" style="display: none;">
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <i class="fab fa-js fa-2x"></i>
+                <h3>JavaScript</h3>
+                <div id="js-certifications" style="display: none;">
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <i class="fas fa-cogs fa-2x"></i>
+                <h3>Data Structures and Algorithms</h3>
+                <div id="dsa-certifications" style="display: none;">
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <i class="fas fa-chart-line fa-2x"></i>
+                <h3>Data Analytics & Visualization</h3>
+                <div id="dav-certifications" style="display: none;">
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <i class="fas fa-project-diagram fa-2x"></i>
+                <h3>Product Management</h3>
+                <div id="pm-certifications" style="display: none;">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Certifications Section -->
+<section id="certifications" class="section certifications-section">
+    <div class="container">
+        <h2 class="certifications-title">Certifications</h2>
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-graduation-cap fa-3x mb-3"></i>
+                        <h5 class="card-title">Python Essentials</h5>
+                        <p class="card-text">An in-depth course on Python programming language by CISCO.</p>
+                        <div class="d-flex justify-content-between">
+                            <button class="btn btn-primary view-more-btn" data-target="#cert1-details">View More</button>
+                            <a href="https://www.credly.com/badges/e81f7c2e-205f-4633-aaba-c28f03f88dd6/public_url" class="btn btn-secondary cert-link" id="cert1-link" target="_blank">Certificate Link</a>
+                        </div>
+                        <div id="cert1-details" class="cert-details" style="display: none;">
+                            <p>This Course was offered by CISCO which focuses on the syntax and semantics of the Python language as well as demonstrate the ability to accomplish coding tasks related to the essentials of programming in the Python language and resolve implementation challenges using the Python Standard Library.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-graduation-cap fa-3x mb-3"></i>
+                        <h5 class="card-title">Machine Learning</h5>
+                        <p class="card-text">Comprehensive training on machine learning algorithms by IBM.</p>
+                        <div class="d-flex justify-content-between">
+                            <button class="btn btn-primary view-more-btn" data-target="#cert2-details">View More</button>
+                            <a href="https://www.credly.com/badges/04b03678-7777-4919-b61f-e9eca236e340/public_url" class="btn btn-secondary cert-link" id="cert2-link" target="_blank">Certificate Link</a>
+                        </div>
+                        <div id="cert2-details" class="cert-details" style="display: none;">
+                            <p>This course covers supervised vs. unsupervised learning, applications of different types of machine learning models, and how to build and evaluate machine learning models.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-graduation-cap fa-3x mb-3"></i>
+                        <h5 class="card-title">Data Science</h5>
+                        <p class="card-text">A comprehensive course on data science techniques and methodologies by IBM.</p>
+                        <div class="d-flex justify-content-between">
+                            <button class="btn btn-primary view-more-btn" data-target="#cert3-details">View More</button>
+                            <a href="https://www.credly.com/badges/838ce11b-6803-44dc-83b8-6b52b6e17ee1/public_url" class="btn btn-secondary cert-link" id="cert3-link" target="_blank">Certificate Link</a>
+                        </div>
+                        <div id="cert3-details" class="cert-details" style="display: none;">
+                            <p>This course includes hands-on practice with various Python libraries specific for data science such as scikit-learn, matplotlib, and bokeh.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-graduation-cap fa-3x mb-3"></i>
+                        <h5 class="card-title">Introduction to Machine Learning</h5>
+                        <p class="card-text">Introductory course on machine learning by Amazon AWS.</p>
+                        <div class="d-flex justify-content-between">
+                            <button class="btn btn-primary view-more-btn" data-target="#cert4-details">View More</button>
+                            <a href="https://drive.google.com/file/d/1CeuX0gUUYS0q2_w0jjTgwsdf25Fjhfbv/view" class="btn btn-secondary cert-link" id="cert4-link" target="_blank">Certificate Link</a>
+                        </div>
+                        <div id="cert4-details" class="cert-details" style="display: none;">
+                            <p>This course covers the introduction of various machine learning algorithms and models.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-graduation-cap fa-3x mb-3"></i>
+                        <h5 class="card-title">Machine Learning Speciality</h5>
+                        <p class="card-text">Comprehensive training on machine learning and AWS tools.</p>
+                        <div class="d-flex justify-content-between">
+                            <button class="btn btn-primary view-more-btn" data-target="#cert5-details">View More</button>
+                            <a href="https://drive.google.com/file/d/1Rn6uaXc8uQPvVlmwdkYYnAe5jNvVA6p9/view?usp=sharing" class="btn btn-secondary cert-link" id="cert5-link" target="_blank">Certificate Link</a>
+                        </div>
+                        <div id="cert5-details" class="cert-details" style="display: none;">
+                            <p>This course includes hands-on practice with various datasets and tools offered by Amazon for machine learning and data science.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-graduation-cap fa-3x mb-3"></i>
+                        <h5 class="card-title">Artificial Intelligence Fundamentals</h5>
+                        <p class="card-text">Comprehensive course on artificial intelligence by IBM.</p>
+                        <div class="d-flex justify-content-between">
+                            <button class="btn btn-primary view-more-btn" data-target="#cert6-details">View More</button>
+                            <a href="https://www.credly.com/badges/1efb42f9-38a9-44a6-ac5e-be5f6f301f43/public_url" class="btn btn-secondary cert-link" id="cert6-link" target="_blank">Certificate Link</a>
+                        </div>
+                        <div id="cert6-details" class="cert-details" style="display: none;">
+                            <p>This course covers the fundamentals of artificial intelligence and its applications in various industries.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 7 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-graduation-cap fa-3x mb-3"></i>
+                        <h5 class="card-title">Deep Learning</h5>
+                        <p class="card-text">In-depth training on deep learning techniques and methodologies by IBM.</p>
+                        <div class="d-flex justify-content-between">
+                            <button class="btn btn-primary view-more-btn" data-target="#cert7-details">View More</button>
+                            <a href="https://www.credly.com/badges/1efb42f9-38a9-44a6-ac5e-be5f6f301f43/public_url" class="btn btn-secondary cert-link" id="cert7-link" target="_blank">Certificate Link</a>
+                        </div>
+                        <div id="cert7-details" class="cert-details" style="display: none;">
+                            <p>This course includes hands-on practice with deep learning frameworks such as TensorFlow and PyTorch.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 8 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-graduation-cap fa-3x mb-3"></i>
+                        <h5 class="card-title">Natural Language Processing</h5>
+                        <p class="card-text">Advanced course on natural language processing by IBM.</p>
+                        <div class="d-flex justify-content-between">
+                            <button class="btn btn-primary view-more-btn" data-target="#cert8-details">View More</button>
+                            <a href="https://www.credly.com/badges/1efb42f9-38a9-44a6-ac5e-be5f6f301f43/public_url" class="btn btn-secondary cert-link" id="cert8-link" target="_blank">Certificate Link</a>
+                        </div>
+                        <div id="cert8-details" class="cert-details" style="display: none;">
+                            <p>This course covers advanced techniques in natural language processing using machine learning and deep learning models.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 9 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-graduation-cap fa-3x mb-3"></i>
+                        <h5 class="card-title">Microsoft Excel Basics</h5>
+                        <p class="card-text">Comprehensive course on Microsoft Excel by Great Learning.</p>
+                        <div class="d-flex justify-content-between">
+                            <button class="btn btn-primary view-more-btn" data-target="#cert9-details">View More</button>
+                            <a href="https://drive.google.com/file/d/1k4RuMy-YJAQQkadoJSlvlMZ-iykKdEow/view" class="btn btn-secondary cert-link" id="cert9-link" target="_blank">Certificate Link</a>
+                        </div>
+                        <div id="cert9-details" class="cert-details" style="display: none;">
+                            <p>This course includes basic data cleaning and dataset management using Microsoft Excel.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 10 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-graduation-cap fa-3x mb-3"></i>
+                        <h5 class="card-title">Data Analytics Essentials</h5>
+                        <p class="card-text">Comprehensive course on data analytics by CISCO.</p>
+                        <div class="d-flex justify-content-between">
+                            <button class="btn btn-primary view-more-btn" data-target="#cert10-details">View More</button>
+                            <a href="https://www.credly.com/badges/c559c028-94d2-439a-96ef-5022d401864e/public_url" class="btn btn-secondary cert-link" id="cert10-link" target="_blank">Certificate Link</a>
+                        </div>
+                        <div id="cert10-details" class="cert-details" style="display: none;">
+                            <p>This course covers the data analytics process, data characteristics, methods to acquire data, basic statistical and data preparation techniques using Excel, SQL, and Tableau.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 11 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-graduation-cap fa-3x mb-3"></i>
+                        <h5 class="card-title">Product Management Basics</h5>
+                        <p class="card-text">Introductory course on product management by Pendo.</p>
+                        <div class="d-flex justify-content-between">
+                            <button class="btn btn-primary view-more-btn" data-target="#cert11-details">View More</button>
+                            <a href="https://www.credly.com/badges/2f16ca31-a30e-43e3-94d4-bda0f12f0b8f/public_url" class="btn btn-secondary cert-link" id="cert11-link" target="_blank">Certificate Link</a>
+                        </div>
+                        <div id="cert11-details" class="cert-details" style="display: none;">
+                            <p>This course covers the fundamentals of the product manager role and best practices through the Product Management Life Cycle.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+ <!-- Contact Section -->
+ <section id="contact" class="section contact-section">
+    <div class="container">
+        <h2 class="text-center">Contact Me</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="contact-info text-center">
+                    <p id="gmail"><i class="fas fa-envelope"></i> gopalvrithray@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +918595154772</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-6 text-center ">
+                <a href="https://www.linkedin.com/in/gopal-vrithray/" class="social-icon" data-toggle="tooltip" title="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="https://github.com/GopalVrithray" class="social-icon" data-toggle="tooltip" title="GitHub"><i class="fab fa-github fa-2x"></i></a>
+                <a href="https://www.instagram.com/gopal.vrithray/" class="social-icon" data-toggle="tooltip" title="Instagram"><i class="fab fa-instagram fa-2x"></i></a>
+            </div>
+    </div>
+</section>
+</div>
+
+ <!-- Bootstrap JS and dependencies -->
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ <!-- Bootstrap JS and dependencies -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-4p4yIw7jy/PtDH4lLjkDr10Sf3VU02Kj5FyY9pZfVIi0ckhI5X7Bk4b/SVCt/dK" crossorigin="anonymous"></script>
+<!-- Bootstrap JS and dependencies -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-4p4yIw7jy/PtDH4lLjkDr10Sf3VU02Kj5FyY9pZfVIi0ckhI5X7Bk4b/SVCt/dK" crossorigin="anonymous"></script>
+<!-- Custom JavaScript for handling the "View More" functionality -->
+<script>
+    $(document).ready(function() {
+        $('.view-more-btn').on('click', function() {
+            var target = $(this).data('target');
+            $(target).slideToggle();
         });
+    });
+</script>
 
-        function toggleVisibility(id) {
-            var element = document.getElementById(id);
-            if (element.style.display === "none") {
-                element.style.display = "block";
-            } else {
-                element.style.display = "none";
-            }
-        }
-    </script>
+ <!-- Custom JS -->
+ <script>
+     $(document).ready(function(){
+         $('[data-toggle="tooltip"]').tooltip();
+     });
+
+     function toggleVisibility(id) {
+         var element = document.getElementById(id);
+         if (element.style.display === "none") {
+             element.style.display = "block";
+         } else {
+             element.style.display = "none";
+         }
+     }
+ </script>
 </body>
 </html>

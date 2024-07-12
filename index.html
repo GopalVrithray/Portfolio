@@ -4,47 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
-    <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- FontAwesome for Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <!-- External CSS File -->
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
 
-<!-- Sticky Navbar -->
+
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
         <a class="navbar-brand" href="#">Portfolio</a>
-        <!-- Navbar Toggler for mobile -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- Navbar Links -->
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-                <!-- Home Link -->
                 <li class="nav-item">
                     <a class="nav-link" href="#home">Home</a>
                 </li>
-                <!-- About Link -->
                 <li class="nav-item">
                     <a class="nav-link" href="#about">About</a>
                 </li>
-                <!-- Projects Link -->
                 <li class="nav-item">
                     <a class="nav-link" href="#projects">Projects</a>
                 </li>
-                <!-- Skills Link -->
                 <li class="nav-item">
                     <a class="nav-link" href="#skills">Skills</a>
                 </li>
-                <!-- Certificates Link -->
                 <li class="nav-item">
                     <a class="nav-link" href="#certifications">Certificates</a>
                 </li>
-                <!-- Contact Link -->
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
                 </li>
@@ -54,7 +44,8 @@
 </nav>
 
 
- <!-- Main Content -->
+
+
  <div class="container">
     <section id="home" class="section">
         <div class="row align-items-center">
@@ -70,7 +61,8 @@
         </div>
     </section>
 
-<!-- About Section -->
+
+
 <section id="about" class="section about-section text-center">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -88,45 +80,89 @@
     </div>
 </section>
 
-       <!-- Projects Section -->
-<section class="projects-section text-center" id="projects">
-    <div class="container">
-        <h2 class="project-title">Projects</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="Profile/Student performance.jpeg" class="card-img-top " alt="Project 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Student Performance Prediction</h5>
-                        <p class="card-text">Used Exploratory Data Analysis for preprocessing and cleaning data and implemented ML-Algorithms for Prediction</p>
-                        <a href="https://github.com/GopalVrithray/Projects/tree/main/Student_Performance_Prediction" class="btn btn-secondary">Github Link</a>
+
+
+<body>
+    <!-- Projects Section -->
+    <section class="projects-section text-center" id="projects">
+        <div class="container">
+            <h2 class="project-title">Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Student Performance Prediction</h5>
+                            <p class="card-text">Used Exploratory Data Analysis for preprocessing and cleaning data and implemented ML-Algorithms for Prediction</p>
+                            <a href="https://github.com/GopalVrithray/Projects/tree/main/Student_Performance_Prediction" class="btn btn-secondary">Github Link</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="Profile/Indian_Premier_League_Official_Logo.png" class="card-img-top" alt="Project 2">
-                    <div class="card-body">
-                        <h5 class="card-title">IPL EDA</h5>
-                        <p class="card-text">Performed Explopratory Data Analysis on the IPL Dataset for making a report on various outcomes, preprocessed and cleaned it for Machine Learning</p>
-                        <a href="https://github.com/GopalVrithray/Projects/tree/main/IPL%20EDA" class="btn btn-secondary">Github Link</a>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">IPL EDA</h5>
+                            <p class="card-text">Performed Exploratory Data Analysis on the IPL Dataset for making a report on various outcomes, preprocessed and cleaned it for Machine Learning</p>
+                            <a href="https://github.com/GopalVrithray/Projects/tree/main/IPL%20EDA" class="btn btn-secondary">Github Link</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="Profile/Titanic.jpg" class="card-img-top project-img" alt="Project 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Titanic EDA</h5>
-                        <p class="card-text">Used Kaggle IPL dataset and have hands on Data cleaning and pre-processing using various Python libraries for Machine learning and Visualization.</p>
-                        <a href="https://github.com/GopalVrithray/Projects/tree/main/Titanic%20EDA" class="btn btn-secondary">Github Link</a>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Cult.fit Case Study</h5>
+                            <p class="card-text">Analyzed Cult.fit's business model and growth strategy. Identified key factors contributing to its success and potential areas for improvement.</p>
+                            <a href="https://github.com/GopalVrithray/Projects/blob/main/Case%20Studies/Case%20Study%20(Cult.fit).pdf" class="btn btn-secondary">Github Link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-ship"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Titanic EDA</h5>
+                            <p class="card-text">Used Kaggle IPL dataset and have hands on Data cleaning and pre-processing using various Python libraries for Machine learning and Visualization.</p>
+                            <a href="https://github.com/GopalVrithray/Projects/tree/main/Titanic%20EDA" class="btn btn-secondary">Github Link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">YouTube Shorts Case Study</h5>
+                            <p class="card-text">Explored the impact of YouTube Shorts on content creation and user engagement. Evaluated its effectiveness compared to other short-form video platforms.</p>
+                            <a href="https://github.com/GopalVrithray/Projects/blob/main/Case%20Studies/Case%20Study%20(YouTube%20Shorts).pdf" class="btn btn-secondary">Github Link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Uber for Elderly Launch Stratergy </h5>
+                            <p class="card-text">Investigated how Uber can enhance its services for elderly passengers. Suggested improvements for accessibility, safety, and user experience.</p>
+                            <a href="https://github.com/GopalVrithray/Projects/blob/main/Case%20Studies/_Uber%20Care%20for%20Elderly_%20Mobile%20App.pdf" class="btn btn-secondary">Github Link</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
+    </section>
 
 
 <section id="skills" class="section skills-section">
@@ -209,12 +245,11 @@
     </div>
 </section>
 
-<!-- Certifications Section -->
+
 <section id="certifications" class="section certifications-section">
     <div class="container">
         <h2 class="certifications-title">Certifications</h2>
         <div class="row">
-            <!-- Card 1 -->
             <div class="col-md-4 mb-4">
                 <div class="card">
                     <div class="card-body">
@@ -231,7 +266,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Card 2 -->
             <div class="col-md-4 mb-4">
                 <div class="card">
                     <div class="card-body">
@@ -248,7 +282,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Card 3 -->
             <div class="col-md-4 mb-4">
                 <div class="card">
                     <div class="card-body">
@@ -265,7 +298,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Card 4 -->
             <div class="col-md-4 mb-4">
                 <div class="card">
                     <div class="card-body">
@@ -282,7 +314,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Card 5 -->
             <div class="col-md-4 mb-4">
                 <div class="card">
                     <div class="card-body">
@@ -299,7 +330,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Card 6 -->
             <div class="col-md-4 mb-4">
                 <div class="card">
                     <div class="card-body">
@@ -316,7 +346,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Card 7 -->
             <div class="col-md-4 mb-4">
                 <div class="card">
                     <div class="card-body">
@@ -333,7 +362,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Card 8 -->
             <div class="col-md-4 mb-4">
                 <div class="card">
                     <div class="card-body">
@@ -350,7 +378,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Card 9 -->
             <div class="col-md-4 mb-4">
                 <div class="card">
                     <div class="card-body">
@@ -367,7 +394,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Card 10 -->
             <div class="col-md-4 mb-4">
                 <div class="card">
                     <div class="card-body">
@@ -384,7 +410,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Card 11 -->
             <div class="col-md-4 mb-4">
                 <div class="card">
                     <div class="card-body">
@@ -401,13 +426,29 @@
                     </div>
                 </div>
             </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-graduation-cap fa-3x mb-3"></i>
+                        <h5 class="card-title">Project Management Fundamentals</h5>
+                        <p class="card-text">Foundational course on Project management by IBM.</p>
+                        <div class="d-flex justify-content-between">
+                            <button class="btn btn-primary view-more-btn" data-target="#cert12-details">View More</button>
+                            <a href="https://www.credly.com/badges/3d662f52-afcf-466e-a4b8-791ab5197759/public_url" class="btn btn-secondary cert-link" id="cert12-link" target="_blank">Certificate Link</a>
+                        </div>
+                        <div id="cert12-details" class="cert-details" style="display: none;">
+                            <p>This course includes the foundational understanding of project management concepts and processes, s knowledge about the value of project management, approaches to project management, and the role and responsibilities of the project manager across the project lifecycle to initiate and plan, execute, and close a project.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
 
 
- <!-- Contact Section -->
+
  <section id="contact" class="section contact-section">
     <div class="container">
         <h2 class="text-center">Contact Me</h2>
@@ -429,17 +470,13 @@
 </section>
 </div>
 
- <!-- Bootstrap JS and dependencies -->
+
  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
- <!-- Bootstrap JS and dependencies -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-4p4yIw7jy/PtDH4lLjkDr10Sf3VU02Kj5FyY9pZfVIi0ckhI5X7Bk4b/SVCt/dK" crossorigin="anonymous"></script>
-<!-- Bootstrap JS and dependencies -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-4p4yIw7jy/PtDH4lLjkDr10Sf3VU02Kj5FyY9pZfVIi0ckhI5X7Bk4b/SVCt/dK" crossorigin="anonymous"></script>
-<!-- Custom JavaScript for handling the "View More" functionality -->
+
 <script>
     $(document).ready(function() {
         $('.view-more-btn').on('click', function() {
@@ -449,7 +486,7 @@
     });
 </script>
 
- <!-- Custom JS -->
+
  <script>
      $(document).ready(function(){
          $('[data-toggle="tooltip"]').tooltip();

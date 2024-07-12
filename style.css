@@ -150,7 +150,25 @@ body {
 .project-img {
     height: 145px; /* Set a fixed height */
 }
-
+.card {
+    height: 100%;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-img-top {
+    max-height: 200px;
+    object-fit: cover;
+}
+.card-title {
+    font-size: 1.25rem;
+}
+.TitanicP{
+    height: 145px;
+}
+    
 
 /* Skills section styles */
 .skills-tittle {
@@ -210,6 +228,23 @@ body {
     color: #ffffff;
     text-decoration: none;
     font-size: 1rem;
+}
+
+.card {
+    height: 100%;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-icon {
+    font-size: 5rem;
+    color: #6c757d;
+    margin: 20px auto;
+}
+.card-title {
+    font-size: 1.25rem;
 }
 
 /* Contact section styles */

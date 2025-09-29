@@ -1,4 +1,4 @@
-# Gopal Vrithray – Portfolio
+# Gopal Sharma – Portfolio
 
 Welcome to my personal portfolio!  
 I'm a final-year engineering student at Delhi Technological University, passionate about financial markets, bond trading, and technology.
